@@ -19,22 +19,21 @@ Final module down -- you're absolutely crushing it! You've made it all the way t
 
 ## The Datasets
 
-For this module's final project, you have the choice of three different types of problems: 
+For this module's final project, you have the choice of four problems:
 
-- Time Series Modeling 
-- Recommendation System 
-- Image Classification with Deep Learning 
+- Time Series Modeling
+- Recommendation System
+- Image Classification with Deep Learning
+- Natural Language Processing
 
+For each problem, we have provided a dataset. You may use a dataset of your own choosing with your instructor's approval.
 
-For each problem, we have provided a dataset.  You are highly encouraged to use the provided dataset, but you may use an alternative dataset of your own choosing, pending instructor approval.
-
-Like Project \#3, the focus here is on *prediction*. It will be up to you to determine how best to evaluate your model, but for any of these projects you should imagine that your goal is to build something that **works**.  If you invest in poorly chosen ZIP codes, this will hurt the business. If you make poor movie recommendations, people will stop trusting your judgments.  And the seriousness of the consequences of mis-classifying pneumonic or non-pneumonic lungs goes without saying! 
+Like Project \#3, the focus here is on *prediction*. It will be up to you to determine how best to evaluate your model, but for any of these projects your goal is to build something that **works**.
 
 When choosing a problem, consider:
 
 1. **Portfolio Depth:** One option is to choose the same type of problem you plan to tackle in Module 5 (capstone).  This will allow you to practice the necessary skills in a group setting, before diving into your individual project.  You will likely produce a capstone project that is more polished and sophisticated, but your portfolio will demonstrate less breadth.
 2. **Portfolio Breadth:** Another option is to choose a type of problem that interests you, but that you don't plan to use in your capstone project.  Each of your individual projects will end up less polished and sophisticated, but you will end up with a portfolio that demonstrates a wider range of skills.
-
 
 ### Problem 1: Time Series Modeling
 
@@ -66,7 +65,7 @@ If you choose the Recommendation System option, you will be making movie recomme
 
 Your task is to:
 
-> Build a model that provides top 5 movie recommendations to a user, based on their ratings of other movies. 
+> Build a model that provides top 5 movie recommendations to a user, based on their ratings of other movies.
 
 The MovieLens dataset is a "classic" recommendation system dataset, that is used in numerous academic papers and machine learning proofs-of-concept.  You will need to create the specific details about how the user will provide their ratings of other movies, in addition to formulating a more specific business problem within the general context of "recommending movies".
 
@@ -84,7 +83,7 @@ If you choose this option, you'll put everything you've learned together to buil
 
 Your task is to:
 
-> Build a model that can classify whether a given patient has pneumonia, given a chest x-ray image. 
+> Build a model that can classify whether a given patient has pneumonia, given a chest x-ray image.
 
 #### Aim for a Proof of Concept
 
@@ -96,7 +95,21 @@ At the end of the day, we want to see your thought process as you iterate and im
 
 Evaluation is fairly straightforward for this project.  But you'll still need to think about which metric to use and about how best to cross-validate your results.
 
+### Problem 4: Natural Language Processing (NLP)
 
+If you choose this option, you'll build an NLP model to analyze Twitter sentiment about Apple and Google products. The dataset comes from CrowdFlower via [data.world][]. Human raters rated the sentiment in over 9,000 Tweets as positive, negative, or neither.
+
+Your task is to:
+
+> Build a model that can rate the sentiment of a Tweet based on its content.
+
+#### Aim for a Proof of Concept
+
+There are many approaches to NLP problems - start with something simple and iterate from there. For example, you could start by limiting your analysis to positive and negative Tweets only, allowing you to build a binary classifier. Then you could add in the neutral Tweets to build out a multiclass classifier. You may also consider using some of the more advanced NLP methods in the Mod 4 Appendix.
+
+#### Evaluation
+
+Evaluating multiclass classifiers can be trickier than binary classifiers because there are multiple ways to mis-classify an observation, and some errors are more problematic than others. Use the business problem that your NLP project sets out to solve to inform your choice of evaluation metrics.
 
 ## The Deliverables
 
@@ -104,11 +117,11 @@ For online students, your completed project should contain the following four de
 
 1. A **_Jupyter Notebook_** containing any code you've written for this project. This work will need to be pushed to a public GitHub repository dedicated for this project.
 
-2. An organized **README.md** file in the GitHub repository that describes the contents of the repository. This file should be the source of information for navigating through the repository. 
+2. An organized **README.md** file in the GitHub repository that describes the contents of the repository. This file should be the source of information for navigating through the repository.
 
 3. A **_[Blog Post](https://github.com/learn-co-curriculum/dsc-welcome-blogging-v2-1)_**.
 
-4. An **_"Executive Summary" PowerPoint Presentation_** that gives a brief overview of your problem/dataset, and each step of the OSEMN process.
+4. An **_"Executive Summary" PowerPoint Presentation_** that gives a brief overview of your problem/dataset, and each step of the data science process.
 
 Note: On-campus students may have different deliverables, please speak with your instructor.
 
@@ -143,17 +156,14 @@ Remember that if a visualization is worth creating, then it's also worth taking 
 * A legend, when necessary
 * No overlapping text that makes it hard to read
 * An intelligent use of color -- multiple lines should have different colors and/or symbols to make them easily differentiable to the eye
-* An appropriate amount of information -- avoid creating graphs that are "too busy". For instance, don't create a line graph with 25 different lines on it. 
+* An appropriate amount of information -- avoid creating graphs that are "too busy". For instance, don't create a line graph with 25 different lines on it.
 
 <center><img src='images/bad-graph-1.png' height=100% width=100%>
 There's just too much going on in this graph for it to be readable -- don't make the same mistake! (<a href='http://genywealth.com/wp-content/uploads/2010/03/line-graph.php_.png'>Source</a>)</center>
 
-
 ### Blog Post Must-Haves
 
 Refer back to the [Blogging Guidelines](https://github.com/learn-co-curriculum/dsc-welcome-blogging-v2-1) for the technical requirements and blog ideas.
-
-
 
 ## The Process
 
@@ -203,12 +213,12 @@ In this case, your "deployment" comes in the form of the deliverables listed abo
  - "How confident are you in the predictive quality of the results?"
  - "What are some of the things that could cause the results to be wrong?"
 
-
-## Grading Rubric 
+## Grading Rubric
 
 Online students can find a PDF of the grading rubric for the project [here](TODO). _Note: On-campus students may have different requirements, please speak with your instructor._
-
 
 ## Citation
 
 1. "What is the CRISP-DM Methodology?" Smart Vision Europe. Available at: https://www.sv-europe.com/crisp-dm-methodology/
+
+[data.world]: https://data.world/crowdflower/brands-and-product-emotions
