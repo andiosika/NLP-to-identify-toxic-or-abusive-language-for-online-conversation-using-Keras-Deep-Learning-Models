@@ -40,7 +40,7 @@ timer.start()
 timer.stop()
 
 def process_comment(text):
-    import nltk
+    from nltk import word_tokenize
     
     tokens = word_tokenize(text)
     stopped_tokens = [w.lower() for w in tokens if w.lower() not in stopwords_list]
@@ -49,22 +49,9 @@ def process_comment(text):
 
 
 
-def plot_loss_acc(history):
-    import matplotlib.pyplot as plt
-    %matplotlib inline 
-
-    acc = history.history['accuracy']
-    val_acc = history.history['val_accuracy']
-    loss = history.history['loss']
-    val_loss = history.history['val_loss']
-    epochs = range(1, len(acc) +1)
-    plt.plot(epochs, acc, label='Training accuracy')
-    plt.plot(epochs, val_acc,color='g', label='Validation accuracy')
-    plt.title('Training and validation accuracy')
-    plt.legend()
-    plt.figure()
-    plt.plot(epochs, loss, label='Training loss')
-    plt.plot(epochs, val_loss, color='g' , label='Validation loss')
-    plt.title('Training and validation loss')
-    plt.legend()
-    plt.show()
+def class_report_model(y_train, y_test, y_preds):
+	for i in range(0,y_train.shape[1]):
+    y_i_hat_trnn = y_preds.iloc[:,i]
+    y_i_trnn = y_test.iloc[:,i]
+    print(y_train.columns[i])
+    print(classification_report(y_i_trnn, y_i_hat_trnn))
