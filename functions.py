@@ -1,22 +1,16 @@
-
 class Timer():
+
     '''A timer used to record how long a process takes.
     After instaniating, a .start() and .stop() can be used 
-    before and after a process in respective order.'''
-
-
-
-
-    ## def init
+    before and after a process in respective order.'''## def init
     def __init__(self,format_="%m/%d/%y - %I:%M %p"):
+
         import tzlocal
         self.tz = tzlocal.get_localzone()
         self.fmt = format_
         
         self.created_at = self.get_time()# get time
-        
-
-    
+         
     ## def get time method
     def get_time(self):
         import datetime as dt
@@ -39,19 +33,34 @@ print(timer.created_at)
 timer.start()
 timer.stop()
 
+
 def process_comment(text):
-    from nltk import word_tokenize
+
+    # Get all the stop words in the English language
+    stopwords_list = stopwords.words('english')
+
+    #remove punctuation
+    stopwords_list += list(string.punctuation)
+    ##adding adhoc all strings that don't appear to contribute, added 'article, page and wikipedia' iteratively as 
+    ##these are parts of most comment strings
+    stopwords_list += ("''","``", "'s", "\\n\\n" , '...', 'i\\','\\n',
+                       '•', "i", 'the', "'m", 'i\\', "'ve", "don\\'t",
+                      "'re", "\\n\\ni", "it\\", "'ll", 'you\\', "'d", "n't",
+                      '’', 'article', 'page', 'wikipedia') 
     
+    from nltk import word_tokenize
     tokens = word_tokenize(text)
     stopped_tokens = [w.lower() for w in tokens if w.lower() not in stopwords_list]
-    return stopped_tokens
+    freqdist = FreqDist(stopped_tokens)
+    most_common_stopped = freqdist.most_common(100)
+    return most_common_stopped
  
 
 
 
-def class_report_model(y_train, y_test, y_preds):
-	for i in range(0,y_train.shape[1]):
-    y_i_hat_trnn = y_preds.iloc[:,i]
-    y_i_trnn = y_test.iloc[:,i]
-    print(y_train.columns[i])
-    print(classification_report(y_i_trnn, y_i_hat_trnn))
+# def class_report_model(y_train, y_test, y_preds):
+# 	for i in range(0,y_train.shape[1]):
+#     y_i_hat_trnn = y_preds.iloc[:,i]
+#     y_i_trnn = y_test.iloc[:,i]
+#     print(y_train.columns[i])
+#     print(classification_report(y_i_trnn, y_i_hat_trnn))

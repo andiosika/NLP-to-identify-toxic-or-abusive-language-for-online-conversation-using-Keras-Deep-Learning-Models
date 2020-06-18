@@ -1,22 +1,17 @@
 
 class Timer():
+
     '''A timer used to record how long a process takes.
     After instaniating, a .start() and .stop() can be used 
-    before and after a process in respective order.'''
-
-
-
-
-    ## def init
+    before and after a process in respective order.'''## def init
     def __init__(self,format_="%m/%d/%y - %I:%M %p"):
+
         import tzlocal
         self.tz = tzlocal.get_localzone()
         self.fmt = format_
         
         self.created_at = self.get_time()# get time
-        
-
-    
+         
     ## def get time method
     def get_time(self):
         import datetime as dt
