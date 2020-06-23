@@ -86,5 +86,7 @@ rnn_last.add(Dense(6, activation='sigmoid'))
 
 Despite having an overall lower recall in some classes, this model is considered the best model because it was able to predict Severe Toxic comments 39% of the time which is better than any other model.  
 
-These findings provided a foundation to:
+It's recommended to use this model to find overall toxic language and develop metrics and associated action plans.  
+
+These findings provided a foundation for future work to:
 Simplify the classifications into three classes, toxic, threatening and identity hate and suggest future work to identify these classes.  More data could be collected or undersampling could be implmented to target these groups specifically.
