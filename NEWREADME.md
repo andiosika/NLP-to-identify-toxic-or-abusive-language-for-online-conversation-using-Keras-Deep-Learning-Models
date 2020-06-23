@@ -53,10 +53,10 @@ In evaluating the toxic text/comments to identify what classified them as such, 
 
 Also it was observed that there was major imbalance in the classes severe toxic, threat, and identitiy hate.  The table below illustrates this.  If a row has a 0 it indicates no target was identified.  A row with a 1 indicates a target was identified:
 
-| toxic |severe_toxic| obscene	| threat|	insult |	identity_hate |
-| ---   | ---        | ---      | ---   | ---      | ---              |    
+| Target | Toxic |Severe_Toxic| Obscene	| Threat|	Insult |	Identity_Hate |
+|--| ---   | ---        | ---      | ---   | ---      | ---              |    
 | 0	|108,232	|118,498|	113,343	|119,310	|113,776	|118,634 |
-|1	|1,1446	|1,180	|6335	|368|5902	|1044|
+|1	|1,1446	|1,180	|6335	|368| 5902	|1044|
 
 
 Several Neural Netowrks were modeled using Keras: https://keras.io/
