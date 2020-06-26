@@ -41,6 +41,7 @@ def process_comment(text):
     text - the text to be cleaned in string format'''
 
     # Get all the stop words in the English language
+    from nltk.corpus import stopwords
     stopwords_list = stopwords.words('english')
 
     #remove punctuation
@@ -71,7 +72,12 @@ def clean_up(freq_tox):
     replace = {'fuck': 'f$%!', 'nigger' : "n*###%" ,'nigga':'n#5#*', 'fucking' : 'f*@%!ng',
                'faggot':'f@&&*#', 'cunt' : 'c&#^' , 'fag' : 'f@$',
                "'fuck" : "'f$%!'", 'faggots':'f@&&*!$'}
-
+    ## That dictionary doesn't render in word cloud so have two versions..
+    ##creating a dictionary of primary offensive words to clean up a visual.  These are highly offensive and
+    ##I am completely uncomfortable even typing them for this purpose, but needs to be done.
+    # dic = {'fuck': 'fword', 'nigger' : "nword" , 'nigga':'nwordderivatie','fucking' : 'fwordderivative',
+    #                'faggot':'fwordforgay', 'cunt' : 'cword' ,'cunts' : 'cwords', 'shit': 'shword', 'fag' : 'shortenedfwordforgay',
+    #                "'fuck" : "'fword'", 'faggots':'fwordforgays'}
     #using the 'replace' dictionary above, 
 
     new_dict = {}
@@ -198,7 +204,7 @@ def freq_dist(tokens, n=100):
    freqdist = FreqDist(tokens)
    most_common_stopped = freqdist.most_common(n)
    return most_common_stopped
-
+    
 
 
 
@@ -216,7 +222,7 @@ def class_report_model(y_train,y_test, y_preds):
     for i in range(0,y_train.shape[1]):
         y_i_hat_trnn = y_preds.iloc[:,i]
         y_tst = y_test.iloc[:,i]
-    print(y_train.columns[i])
-    print(confusion_matrix(y_tst, y_i_hat_trnn, normalize='true'))
-    print()
-    print(classification_report(y_tst, y_i_hat_trnn))       
+        print(y_train.columns[i])
+        print(confusion_matrix(y_tst, y_i_hat_trnn, normalize='true'))
+        print()
+        print(classification_report(y_tst, y_i_hat_trnn))       
