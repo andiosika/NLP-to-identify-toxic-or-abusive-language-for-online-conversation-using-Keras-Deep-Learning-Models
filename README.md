@@ -1,11 +1,8 @@
-# Mod 4 Project: Natural Language Processing (NLP) - Improving online conversation: Use of NLP analysis to build a multi-headed model capable of detecting different types of online discussion toxicity like threats, obscenity, insults, and identity-based hate.
+# Natural Language Processing (NLP) - Improving online conversation: Use of NLP analysis to build a multi-headed model capable of detecting different types of online discussion toxicity like threats, obscenity, insults, and identity-based hate.
 
 
-Student name: Andi Osika
+By: Andi Osika
 
-* Student pace: part time
-* Scheduled project review date/time: June 30, 2020
-* Instructor name: James Irving, PhD
 * Blog post URL: https://learn.co/blog/blog_posts/26973/edit
 
 ## Relevant files: 
@@ -25,7 +22,10 @@ The goal of this prjoect was to use NLP analysis to build a multi-headed model c
 
 Since I had little experience with deep learning, that was the method used to classify to gain experience. It proved to be a challenging problem.
 
-There was signficant target imbalance of 10% being amplified needing to categorize 6 overlapping classes. A search indicates that that this problem exists even for experts in the field. One example can be found here where researchers at Stanford experimented with this problem and still seek ways to overcome this challenge.
+But first some good news: **Toxic comments are relatively rare:**
+![](https://github.com/andiosika/NLP-to-identify-toxic-or-abusive-language-for-online-conversation-using-Keras-Deep-Learning-Models/blob/master/images/Toxic_frequency.PNG)
+
+There was signficant target imbalance of 10% being amplified needing to categorize 6 overlapping classes. A search indicates that that this problem exists even for experts in the field. One example can be found here where [researchers at Stanford](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1184/reports/6837517.pdf) experimented with this problem and still seek ways to overcome this challenge.
 
 ### Background: 
 Freedom of speech is a right.  Digital platforms facilitate conversations, but struggle to do so efficiently while enabling this freedom while minimizing abuse and harrasment that can come with the 'anonymity effect' of a virtual climate.  
