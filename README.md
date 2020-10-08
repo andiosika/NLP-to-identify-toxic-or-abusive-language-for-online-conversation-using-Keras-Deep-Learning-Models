@@ -1,4 +1,4 @@
-# Mod 4 Project: Natural Language Processing (NLP) - Improving online conversation: Use of NLP analysis to build a multi-headed model capable of detecting different types of online discussion toxicity like threats, obscenity, insults, and identity-based hate.
+# Natural Language Processing (NLP) - Improving online conversation: Use of NLP analysis to build a multi-headed model capable of detecting different types of online discussion toxicity like threats, obscenity, insults, and identity-based hate.
 
 
 By: Andi Osika
