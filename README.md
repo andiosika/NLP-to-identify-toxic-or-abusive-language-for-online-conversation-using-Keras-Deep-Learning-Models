@@ -1,11 +1,8 @@
 # Mod 4 Project: Natural Language Processing (NLP) - Improving online conversation: Use of NLP analysis to build a multi-headed model capable of detecting different types of online discussion toxicity like threats, obscenity, insults, and identity-based hate.
 
 
-Student name: Andi Osika
+By: Andi Osika
 
-* Student pace: part time
-* Scheduled project review date/time: June 30, 2020
-* Instructor name: James Irving, PhD
 * Blog post URL: https://learn.co/blog/blog_posts/26973/edit
 
 ## Relevant files: 
