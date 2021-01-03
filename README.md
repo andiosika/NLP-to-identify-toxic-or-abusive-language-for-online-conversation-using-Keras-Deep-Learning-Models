@@ -44,7 +44,7 @@ This dataset is provided by [Conversation AI ](https://conversationai.github.io/
 
 
 **Warning:** the text found in each of the categories outlined above is extremely offensive. It is important to point out that as the researcher I did not create or support any of the sentiment captured in the toxic language, but feel it important to observe it in order to evaluate findings.
- The supporting visualizations are equally offensive in the notebook.  Because of this, edited versions of some the most offensive findings were/are edited text that I feel conveys the ideas without perpetuating the toxic messages and used for the non-technical explanation.  However the findings in this analysis are necessary for identification's sake.  The intention is to use this type of analysis in order to mitigate situations where others feel unable to share their views at the risk of abuse or feeling that are in harm's way.
+ The supporting visualizations are equally offensive in the notebook.  Because of this, edited versions of some the most offensive findings were/are edited text that I feel conveys the ideas without perpetuating the toxic messages.  These distilled versions are used for the non-technical explanation.  However offensive, the findings in this analysis are necessary for identification's sake.  The intention is to use this type of analysis in order to mitigate situations where others feel unable to share their views at the risk of abuse or feeling threatened way.
 
 ### Findings:
 
