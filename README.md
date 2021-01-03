@@ -48,7 +48,10 @@ This dataset is provided by [Conversation AI ](https://conversationai.github.io/
 
 ### Findings:
 
-In evaluating the toxic text/comments to identify what classified them as such, patterns developed that demonstrated specific words helped in identifying toxicity. In particular, the same three words appared between 75%-100% of the time in four of the categories: Toxic, Severe Toxic, Insulting, and Obscene. More unique words were used in threatening comments and identity-based hate comments. Comment length was also comparitvely evaluated. It was determined that there was little difference in comment lenght between those made with toxic sentiment and those without.
+In evaluating the toxic text/comments to identify what classified them as such, patterns developed that demonstrated specific words helped in identifying toxicity. In particular, the same three words appared between 75%-100% of the time in four of the categories: Toxic, Severe Toxic, Insulting, and Obscene. 
+![](https://github.com/andiosika/NLP-to-identify-toxic-or-abusive-language-for-online-conversation-using-Keras-Deep-Learning-Models/blob/master/images/words.PNG)
+
+More unique words were used in threatening comments and identity-based hate comments. Comment length was also comparitvely evaluated. It was determined that there was little difference in comment lenght between those made with toxic sentiment and those without.
 
 
 Also it was observed that there was major imbalance in the classes severe toxic, threat, and identitiy hate.  The table below illustrates this.  If a row has a 0 it indicates no target was identified.  A row with a 1 indicates a target was identified:
