@@ -3,7 +3,7 @@
 
 By: Andi Osika
 
-* Blog post URL: https://learn.co/blog/blog_posts/26973/edit
+* Blog post URL: https://andiosika.github.io/focal_loss_in_deep_learning
 
 ## Relevant files: 
   * Improving_Online_Conversation.ipynb
