@@ -62,7 +62,7 @@ Also it was observed that there was major imbalance in the classes severe toxic,
 |1	|1,1446	|1,180	|6335	|368| 5902	|1044|
 
 
-Several Neural Netowrks were modeled using Keras: https://keras.io/
+Preprocessing of the text data and everal Neural Netowrks were modeled using Keras: https://keras.io/ 
 
 While varying deep learning models were able to have high rates of accuracy their ability to identify toxic text proved to be more simple than the case of identifying the extremely underclassified examples, with an accuracy of rate of 96% , recall topped out at ~87% in the best case in the multi-class model using deep learning for one category.  In most cases, recall was 0 for the smaller classes. 
 
