@@ -35,7 +35,7 @@ Even though the Constitution guarantees the right of free speech, that right is 
 This dataset is provided by [Conversation AI ](https://conversationai.github.io/) is a collaborative research effort exploring ML as a tool for better discussions online.  The source is a collection of comments from Wikipedia’s talk page edits circa 2017.  The result is a classification list of 159,571 samples provided by Wikipedia and have been labeled by human raters for toxic effects.  These comment classifications can fall into more than one of the following categories:
 
 >The types of toxicity manually classified were:
-* toxic
+- toxic
 - severe_toxic
 - obscene
 - threat
