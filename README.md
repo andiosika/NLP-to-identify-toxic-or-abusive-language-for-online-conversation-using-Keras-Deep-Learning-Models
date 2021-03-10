@@ -35,7 +35,7 @@ Even though the Constitution guarantees the right of free speech, that right is 
 This dataset is provided by [Conversation AI ](https://conversationai.github.io/) is a collaborative research effort exploring ML as a tool for better discussions online.  The source is a collection of comments from Wikipedia’s talk page edits circa 2017.  The result is a classification list of 159,571 samples provided by Wikipedia and have been labeled by human raters for toxic effects.  These comment classifications can fall into more than one of the following categories:
 
 >The types of toxicity manually classified were:
-* toxic
+- toxic
 - severe_toxic
 - obscene
 - threat
@@ -62,7 +62,7 @@ Also it was observed that there was major imbalance in the classes severe toxic,
 |1	|1,1446	|1,180	|6335	|368| 5902	|1044|
 
 
-Several Neural Netowrks were modeled using Keras: https://keras.io/
+Preprocessing of the text data and everal Neural Netowrks were modeled using Keras: https://keras.io/ 
 
 While varying deep learning models were able to have high rates of accuracy their ability to identify toxic text proved to be more simple than the case of identifying the extremely underclassified examples, with an accuracy of rate of 96% , recall topped out at ~87% in the best case in the multi-class model using deep learning for one category.  In most cases, recall was 0 for the smaller classes. 
 
